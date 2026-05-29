@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Campaign Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>BrightKids</h2>
+    <nav>
+        <a href="#why">Why Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#enquiry">Enquiry</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">Admissions Open 2026</span>
+        <h1>Preschool & Daycare Admissions Now Open</h1>
+        <p>Give your child a safe, joyful, and activity-based learning environment.</p>
+
+        <div class="hero-buttons">
+            <a href="#enquiry" class="btn primary">Book Free Demo Visit</a>
+            <a href="#programs" class="btn secondary">View Programs</a>
+        </div>
+    </div>
+</section>
+
+<section class="offer-banner">
+    🎉 Admission Offer: Free Registration for First 50 Enquiries
+</section>
+
+<section id="why" class="section">
+    <h2>Why Choose Us?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Safe Environment</h3>
+            <p>Child-friendly campus with caring staff and secure classrooms.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certified Teachers</h3>
+            <p>Experienced teachers trained in early childhood education.</p>
+        </div>
+
+        <div class="card">
+            <h3>Activity Learning</h3>
+            <p>Learning through games, stories, rhymes, art, and creativity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Daycare Support</h3>
+            <p>Extended care with playtime, rest, meals, and supervision.</p>
+        </div>
+    </div>
+</section>
+
+<section id="programs" class="section">
+    <h2>Admission Programs</h2>
+
+    <div class="programs">
+        <div class="program-card">
+            <h3>Play Group</h3>
+            <p>Age: 2 - 3 Years</p>
+            <p>Timing: 9 AM - 12 PM</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Nursery</h3>
+            <p>Age: 3 - 4 Years</p>
+            <p>Timing: 9 AM - 1 PM</p>
+        </div>
+
+        <div class="program-card highlight">
+            <h3>Daycare Program</h3>
+            <p>Age: 2 - 6 Years</p>
+            <p>Timing: 9 AM - 6 PM</p>
+            <strong>Most Popular</strong>
+        </div>
+    </div>
+</section>
+
+<section class="limited">
+    <h2>Limited Seats Available</h2>
+    <p>Only <span id="seatCount">20</span> seats remaining for this admission campaign.</p>
+
+    <div class="seat-bar">
+        <div class="seat-fill"></div>
+    </div>
+
+    <a href="#enquiry" class="btn primary">Apply Now</a>
+</section>
+
+<section id="enquiry" class="section enquiry-section">
+    <h2>Enquiry Form</h2>
+    <p class="subtitle">Book a free demo visit and our admission team will contact you.</p>
+
+    <form id="leadForm">
+        <input type="text" id="parentName" placeholder="Parent Name" required>
+        <input type="text" id="childName" placeholder="Child Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <select id="program" required>
+            <option value="">Select Program</option>
+            <option>Play Group</option>
+            <option>Nursery</option>
+            <option>Daycare Program</option>
+        </select>
+
+        <input type="date" id="visitDate" required>
+        <button type="submit">Book Free Demo Visit</button>
+    </form>
+
+    <p id="successMsg"></p>
+</section>
+
+<a href="https://wa.me/919999999999" class="whatsapp" target="_blank">
+    WhatsApp
+</a>
+
+<footer>
+    <p>© 2026 BrightKids Preschool & Daycare | Admission Campaign</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

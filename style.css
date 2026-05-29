@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #111827;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar h2 {
+    color: #2563eb;
+    font-size: 28px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #111827;
+    font-weight: bold;
+}
+
+#themeToggle {
+    padding: 9px 13px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 82vh;
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tag {
+    background: white;
+    color: #2563eb;
+    padding: 9px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 54px;
+    margin: 25px 0 18px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.primary {
+    background: white;
+    color: #2563eb;
+}
+
+.secondary {
+    background: #111827;
+    color: white;
+}
+
+.offer-banner {
+    background: #facc15;
+    color: #111827;
+    text-align: center;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section {
+    padding: 60px 8%;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.card,
+.program-card,
+.enquiry-section {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.card h3,
+.program-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.program-card {
+    text-align: center;
+}
+
+.program-card p {
+    margin: 10px 0;
+}
+
+.highlight {
+    border: 3px solid #2563eb;
+    transform: scale(1.03);
+}
+
+.highlight strong {
+    color: #16a34a;
+}
+
+.limited {
+    text-align: center;
+    padding: 55px 8%;
+    background: #e0f2fe;
+}
+
+.limited h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.limited p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#seatCount {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.seat-bar {
+    width: 60%;
+    height: 16px;
+    background: white;
+    border-radius: 30px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.seat-fill {
+    width: 75%;
+    height: 100%;
+    background: #dc2626;
+}
+
+.enquiry-section {
+    max-width: 900px;
+    margin: auto;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+#leadForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+#leadForm input,
+#leadForm select {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+#leadForm button {
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#successMsg {
+    margin-top: 20px;
+    color: #16a34a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #22c55e;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+.dark-mode .navbar,
+.dark-mode .card,
+.dark-mode .program-card,
+.dark-mode .enquiry-section {
+    background: #1f2937;
+    color: white;
+}
+
+.dark-mode .navbar a {
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode select {
+    background: #374151;
+    color: white;
+    border: 1px solid #6b7280;
+}
+
+.dark-mode .limited {
+    background: #1f2937;
+}
+
+.dark-mode .subtitle {
+    color: #ddd;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .programs {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .seat-bar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards,
+    #leadForm {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
